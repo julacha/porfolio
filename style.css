@@ -3,6 +3,7 @@ main{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 3fr;
     gap:5px;
+    background-color: aliceblue;
 }
 .header{
     grid-area: 1/1/2/3;
