@@ -1,8 +1,11 @@
-let change = document.querySelector(".project");
+console.log("js_start");
+let change = document.querySelector(".view");
 let show_link = document.querySelector(".show");
+console.log("change");
+console.log("show_link");
 
-
-change.addEventListener("click", function (event) {
+change.addEventListener("mouseover", function (event) {
   event.preventDefault();
-  show_link.classList.toggle("show_link");
+  console.log("event");
+  show_link.classList.toggle("active");
 });

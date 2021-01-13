@@ -53,6 +53,11 @@ main{
     justify-content: center;
     align-items: center;
     /* opacity: 0.5; */
+    display: none;
+}
+
+.show:active{
+    display: initial;
 }
 a   {
     text-decoration: none;
