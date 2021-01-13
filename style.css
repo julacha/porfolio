@@ -30,18 +30,42 @@ main{
     margin-top: 4em;
 }
 
-a .size{
+.view .project{
     width: 15em; 
     height: 15em; 
-    object-fit: cover; 
+    object-fit: cover;
+    /* display: none; */
 }
-a .size:hover {
-    background-color:rgb(142, 15, 79);
-    z-index: 1;  
+/* .view .project:hover {
+    opacity: 0.5;
+} */
+/* .project:active {
+    opacity: 0.5;
+} */
+/* .hide{
+    display: none;
+} */
+.show{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.5; */
 }
-a .size:active {
-    background-color: rgb(190, 66, 66);
-    z-index: 1;
+a   {
+    text-decoration: none;
+}
+a .desc{
+    display: flex;
+    width: 10em; 
+    height: 3em;
+    background-color: wheat;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(17, 27, 27);
 }
 .item_1{
     grid-area: 1/1/2/2;
