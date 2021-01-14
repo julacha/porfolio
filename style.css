@@ -34,31 +34,38 @@ main{
     width: 15em; 
     height: 15em; 
     object-fit: cover;
-    /* display: none; */
+    display: block;
 }
-/* .view .project:hover {
-    opacity: 0.5;
-} */
-/* .project:active {
-    opacity: 0.5;
-} */
-/* .hide{
+
+.new{
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    z-index: 0.5;
+}
+.show a{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
     display: none;
-} */
-.show{
+    justify-content: center;
+    align-items: center;
+}
+.active{
     width: 15em; 
     height: 15em;
     background-color: darkslategrey;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* opacity: 0.5; */
-    display: none;
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter: alpha(opacity=80) rgb(5, 70, 122);
+    -khtml-opacity: 0.8;
+    background-color:rgb(5, 70, 122);
 }
 
-.show:active{
-    display: initial;
-}
+
 a   {
     text-decoration: none;
 }
