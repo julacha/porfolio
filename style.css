@@ -14,6 +14,13 @@ nav a{
     /*20px*/
     text-decoration: none;
 }
+.photo{
+    width: 100px;
+    height: 120px;
+    /* background-image: url(img/Image_2.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 main{
     display: flex;
     justify-content: center;
@@ -64,11 +71,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* opacity:0.8; */
-    /* -moz-opacity:0.8;
-    filter: alpha(opacity=80) rgb(1, 6, 10);
-    -khtml-opacity: 0.8; */
-    /* background-color:rgb(1, 6, 10); */
 }
 
 a   {
@@ -102,6 +104,14 @@ a .desc{
 .item_6{
     grid-area: 2/3/3/4;
 }
+
+.about{
+    width: 700px;
+    height: 600px;
+    background: beige;
+    margin: auto auto;
+}
+
 /*.header{
     grid-area: 1/1/2/3;
     background-color: rgb(253, 234, 218);
