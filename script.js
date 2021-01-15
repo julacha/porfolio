@@ -9,15 +9,15 @@ console.log("link");
 change.addEventListener("click", function () {
 
   console.log("event");
-  // change.replaceWith(link);
-  // link.classList.add("active");
-  if(!change.classList.contains("new")){
-    change.classList.add("new")&&
-    link.classList.add("active")
-  }else{
-    change.classList.remove("new")&&
-    link.classList.remove("active")
-  }
+  change.replaceWith(link);
+  link.classList.add("active");
+  // if(!change.classList.contains("new")){
+  //   change.classList.add("new")&&
+  //   link.classList.add("active")
+  // }else{
+  //   change.classList.remove("new")&&
+  //   link.classList.remove("active")
+  // }
 
   // if(!link.classList.contains("active")){
   //   link.classList.add("active")

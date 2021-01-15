@@ -50,21 +50,26 @@ main{
     display: none;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .active{
     width: 15em; 
     height: 15em;
-    background-color: darkslategrey;
+    background-image:linear-gradient(
+        rgba(25, 77, 102, 0.45),
+        rgba(25, 77, 102, 0.45)),
+    url(img/fizzbuzz.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:0.8;
-    -moz-opacity:0.8;
-    filter: alpha(opacity=80) rgb(5, 70, 122);
-    -khtml-opacity: 0.8;
-    background-color:rgb(5, 70, 122);
+    /* opacity:0.8; */
+    /* -moz-opacity:0.8;
+    filter: alpha(opacity=80) rgb(1, 6, 10);
+    -khtml-opacity: 0.8; */
+    /* background-color:rgb(1, 6, 10); */
 }
-
 
 a   {
     text-decoration: none;
@@ -73,7 +78,7 @@ a .desc{
     display: flex;
     width: 10em; 
     height: 3em;
-    background-color: wheat;
+    background-color: white;
     border-radius: 25px;
     justify-content: center;
     align-items: center; 
