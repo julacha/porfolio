@@ -5,6 +5,8 @@ body{
 .header {
     display: flex;
     justify-content: space-around;
+    background-image:url(img/bg_2.jpg);
+    /* linear-gradient(rgba(253, 252, 234, 0.5), rgba(252, 252, 252, 0.5)), */
 }
 nav a{
     margin:3em;
