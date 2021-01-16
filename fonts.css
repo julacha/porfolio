@@ -1,0 +1,13 @@
+/* la-belle-aurore-regular - latin */
+@font-face {
+  font-family: 'La Belle Aurore';
+  font-style: normal;
+  font-weight: 400;
+  src: url('la-belle-aurore-v11-latin (1)/la-belle-aurore-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  /* src: local(''),
+       url('../fonts/la-belle-aurore-v11-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/la-belle-aurore-v11-latin-regular.woff2') format('woff2'), 
+       url('../fonts/la-belle-aurore-v11-latin-regular.woff') format('woff'), 
+       url('../fonts/la-belle-aurore-v11-latin-regular.ttf') format('truetype'), 
+       url('../fonts/la-belle-aurore-v11-latin-regular.svg#LaBelleAurore') format('svg');  */
+}
