@@ -1,7 +1,7 @@
 @import url("fonts.css");
-/* body{
+.body{
     font-family: 'Mukta', sans-serif;
-} */
+} 
 .header {
     display: flex;
     font-family: 'La Belle Aurore', cursive;
@@ -127,7 +127,7 @@ a .desc{
 p{
     width: 300px;
     height: 240px;
-    /* font-family: 'La Belle Aurore', cursive; */
+    font-family: 'La Belle Aurore';
 } 
 /*.header{
     grid-area: 1/1/2/3;
