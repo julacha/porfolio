@@ -1,14 +1,19 @@
 @import url("fonts.css");
 .body{
     font-family: 'Mukta', sans-serif;
-} 
+}
+body {
+    background: url('about.html');
+ }
 .header {
     display: flex;
     font-family: 'La Belle Aurore', cursive;
     justify-content: space-around;
+    align-items: center;
     background-image:linear-gradient(rgba(253, 252, 234, 0.1), rgba(252, 252, 252, 0.1)),url(img/bg_2.jpg);
     font-size: 25px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    height: 4.5em;
     /* linear-gradient(rgba(253, 252, 234, 0.5), rgba(252, 252, 252, 0.5)), */
 }
 nav a{
@@ -32,7 +37,7 @@ main{
     font-family: 'Mukta', sans-serif;
     width: 60em;
     height: 31em;
-    margin-top: 2em;
+    margin-top: 1em;
     font-family: 'Mukta', sans-serif;
     background-color: white;
 }
@@ -125,9 +130,9 @@ a .desc{
     justify-content: space-around;align-items: center;
 }
 p{
-    width: 300px;
-    height: 240px;
+    width: 320px;
     font-family: 'La Belle Aurore';
+    font-size: 20px;
 } 
 /*.header{
     grid-area: 1/1/2/3;
