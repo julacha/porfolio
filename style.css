@@ -171,3 +171,18 @@ a.inst:-webkit-any-link {
 strong{
     color:maroon;
 }
+h1{
+    font-family: 'La Belle Aurore', cursive;  
+}
+.contacts{
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(253, 252, 234, 0.1), rgba(252, 252, 252, 0.1)),url(img/bg_2.jpg);
+}
+.contacts.active{
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: beige;
+}
