@@ -8,7 +8,7 @@ body {
 .header {
     display: flex;
     font-family: 'La Belle Aurore', cursive;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-image:linear-gradient(rgba(253, 252, 234, 0.1), rgba(252, 252, 252, 0.1)),url(img/bg_2.jpg);
     flex-wrap: nowrap;
@@ -16,11 +16,16 @@ body {
     font-size: 2.5em;
     /* linear-gradient(rgba(253, 252, 234, 0.5), rgba(252, 252, 252, 0.5)), */
 }
-svg.tech{
+/* svg.tech{
     width:70px;
     fill:darkred;
+} */
+.logo{
+    width: 80px;
 }
-
+.logo_2{
+    width: 80px;
+}
 nav a{
     margin:2em;
 }
