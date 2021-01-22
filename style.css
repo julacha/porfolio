@@ -91,7 +91,45 @@ main{
     justify-content: center;
     align-items: center;
 }
-
+.active_2{
+    width: 15em; 
+    height: 15em;
+    background-image:linear-gradient(
+        rgba(25, 77, 102, 0.45),
+        rgba(25, 77, 102, 0.45)),
+    url(img/mag.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active_3{
+    width: 15em; 
+    height: 15em;
+    background-image:linear-gradient(
+        rgba(25, 77, 102, 0.45),
+        rgba(25, 77, 102, 0.45)),
+    url(img/sparkle.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active_4{
+    width: 15em; 
+    height: 15em;
+    background-image:linear-gradient(
+        rgba(25, 77, 102, 0.45),
+        rgba(25, 77, 102, 0.45)),
+    url(img/todolist.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 a   {
     text-decoration: none;
 }
