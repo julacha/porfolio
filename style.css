@@ -171,14 +171,16 @@ a.inst:-webkit-any-link {
 strong{
     color:maroon;
 }
-h1{
-    font-family: 'La Belle Aurore', cursive;  
+
+#type{
+    font-family: 'La Belle Aurore', cursive; 
+    color: #8fc8ae; 
+    margin-left: 250px;
 }
-h2{
-    display: flex;
-    justify-content: center;
+h1 .name{
     font-family: 'La Belle Aurore', cursive;
-    color: darkred;
+}
+h1{
     margin: 0;
 }
 h4{
@@ -356,4 +358,3 @@ h4{
     color: #8fc8ae;
     }
 }
-
