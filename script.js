@@ -1,18 +1,48 @@
 //console.log("js_start");
+let changes = document.querySelectorAll(".view");
+let links = document.querySelectorAll(".show a");
 
-let project_1 = document.querySelector(".item_1")
+// for (let change of changes) for(let link of links){
+// change.addEventListener("mouseover", function () {
+//   document.getElementById(change).style.opacity = opacity/100;
+//   document.getElementById(change).style.filter = 'alpha(opacity='+ opacity +')';
+//   change.replaceWith(link);
+//   document.getElementById(link).style.opacity = (100-opacity)/100;
+//   document.getElementById(link).style.filter = 'alpha(opacity='+ (100-opacity) +')';
+//   this.link.classList.add("active");
+// });
+// link.addEventListener("mouseout", function () {
+//   console.log("event");
+//   link.replaceWith(change);
+// });
+// }
+//https://stackoverflow.com/questions/29017379/how-to-make-fadeout-effect-with-pure-javascript
+let project_1 = document.querySelector(".item_1");
 let change = document.querySelector(".view");
 let link = document.querySelector(".show a");
 project_1.querySelector(".view").addEventListener("mouseover", function () {
   console.log("event");
   change.replaceWith(link);
   link.classList.add("active");
+  change.classList.add("fadeout");
 });
 project_1.querySelector(".show a").addEventListener("mouseout", function () {
   console.log("event");
+  link.classList.add("fadein");
   link.replaceWith(change);
 });
-
+//---------------------------------------------
+// function bbb(){
+//   setTimeout(function(){ 
+//   document.querySelector("show a"), 1000;   
+// });
+// }
+// function aaa(){
+//   setTimeout(function(){ 
+//   document.querySelector(".show a"), 1000;   
+// });
+// }
+//-----------------------------------------------
 let project_2 = document.querySelector(".item_2")
 let change_2 = document.querySelector(".view_2");
 let link_2 = document.querySelector(".show_2 a");
@@ -54,26 +84,28 @@ project_4.querySelector(".show_4 a").addEventListener("mouseout", function () {
 
 // --------------------------------
 
-// var wrapper = document.querySelector(".skills");
-// var text = document.querySelector(".text");
+var wrapper = document.querySelector(".skills");
+var prog = document.querySelector(".text");
 
-// var textCont = text.textContent;
-// text.style.display = "none";
+var textCont = prog.textContent;
+prog.style.display = "none";
 
-// for (let i = 0; i < textCont.length; i++) {
-//   (function(i) {
-//     setTimeout(function() {
-//       let texts = document.createTextNode(textCont[i])
-//       let span = document.createElement('span');
-//       span.appendChild(texts);
+for (let i = 0; i < textCont.length; i++) {
+  (function(i) {
+    setTimeout(function() {
+      let texts = document.createTextNode(textCont[i])
+      let span = document.createElement('span');
+      span.appendChild(texts);
 
-//       span.classList.add("wave");
-//       wrapper.appendChild(span);
+      span.classList.add("wave");
+      wrapper.appendChild(span);
 
-//     }, 75 * i);
-//   }(i));
-// }
+    }, 75 * i);
+  }(i));
+}
 //--------------------------------
+let els = document.querySelectorAll('#type');
+for (let el of els){
 function printText( el ){
 
 	let letterTimeout = 100
@@ -94,5 +126,5 @@ function printText( el ){
 	print() 
 };
 
-let el = document.getElementById( 'type' )
 printText( el );
+}
