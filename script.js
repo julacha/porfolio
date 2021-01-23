@@ -24,24 +24,14 @@ project_1.querySelector(".view").addEventListener("mouseover", function () {
   console.log("event");
   change.replaceWith(link);
   link.classList.add("active");
-  change.classList.add("fadeout");
+  link.classList.add("fadein");
 });
 project_1.querySelector(".show a").addEventListener("mouseout", function () {
   console.log("event");
-  link.classList.add("fadein");
   link.replaceWith(change);
+  change.classList.add("fadeout");
 });
-//---------------------------------------------
-// function bbb(){
-//   setTimeout(function(){ 
-//   document.querySelector("show a"), 1000;   
-// });
-// }
-// function aaa(){
-//   setTimeout(function(){ 
-//   document.querySelector(".show a"), 1000;   
-// });
-// }
+
 //-----------------------------------------------
 let project_2 = document.querySelector(".item_2")
 let change_2 = document.querySelector(".view_2");
