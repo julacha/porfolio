@@ -56,20 +56,61 @@ main{
     background-color: white;
 }
 
-.view .project{
+.view .design {
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+    border-radius: 4%;
+}
+.view_2 .design {
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+}
+.view_3 .design{
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+}
+.view_4 .design{
     width: 15em; 
     height: 15em; 
     object-fit: cover;
     display: block;
 }
 
-.new{
-    width: 15em; 
-    height: 15em; 
-    object-fit: cover;
-    z-index: 0.5;
-}
 .show a{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.show_2 a{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.show_3 a{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.show_4 a{
     width: 15em; 
     height: 15em;
     background-color: darkslategrey;

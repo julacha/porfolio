@@ -21,7 +21,7 @@ project_2.querySelector(".view_2").addEventListener("mouseover", function () {
   change_2.replaceWith(link_2);
   link_2.classList.add("active_2");
 });
-project_2.querySelector(".show_2").addEventListener("mouseout", function () {
+project_2.querySelector(".show_2 a").addEventListener("mouseout", function () {
   console.log("event");
   link_2.replaceWith(change_2);
 });
@@ -34,14 +34,14 @@ project_3.querySelector(".view_3").addEventListener("mouseover", function () {
   change_3.replaceWith(link_3);
   link_3.classList.add("active_3");
 });
-project_3.querySelector(".show_3").addEventListener("mouseout", function () {
+project_3.querySelector(".show_3 a").addEventListener("mouseout", function () {
   console.log("event");
   link_3.replaceWith(change_3);
 });
 
 let project_4 = document.querySelector(".item_4")
 let change_4 = document.querySelector(".view_4");
-let link = document.querySelector(".show_4 a");
+let link_4 = document.querySelector(".show_4 a");
 project_4.querySelector(".view_4").addEventListener("mouseover", function () {
   console.log("event");
   change_4.replaceWith(link_4);
@@ -51,17 +51,20 @@ project_4.querySelector(".show_4 a").addEventListener("mouseout", function () {
   console.log("event");
   link_4.replaceWith(change_4);
 });
+
+// --------------------------------
+
 // var wrapper = document.querySelector(".skills");
 // var text = document.querySelector(".text");
 
 // var textCont = text.textContent;
 // text.style.display = "none";
 
-// for (var i = 0; i < textCont.length; i++) {
+// for (let i = 0; i < textCont.length; i++) {
 //   (function(i) {
 //     setTimeout(function() {
-//       var texts = document.createTextNode(textCont[i])
-//       var span = document.createElement('span');
+//       let texts = document.createTextNode(textCont[i])
+//       let span = document.createElement('span');
 //       span.appendChild(texts);
 
 //       span.classList.add("wave");
@@ -70,26 +73,26 @@ project_4.querySelector(".show_4 a").addEventListener("mouseout", function () {
 //     }, 75 * i);
 //   }(i));
 // }
+//--------------------------------
+function printText( el ){
 
-// function printText( el ){
+	let letterTimeout = 100
 
-// 	let letterTimeout = 100
+	let heading = el.innerHTML
+	let i = 1
 
-// 	let heading = el.innerHTML
-// 	let i = 1
+	let print = function(){
 
-// 	let print = function(){
+			if( i <= heading.length ){
+				el.innerHTML = heading.substring( 0, i );
+				setTimeout( arguments.callee, letterTimeout );
+			}
 
-// 			if( i <= heading.length ){
-// 				el.innerHTML = heading.substr( 0, i );
-// 				setTimeout( arguments.callee, letterTimeout );
-// 			}
+			i++;
+		}
 
-// 			i++;
-// 		}
+	print() 
+};
 
-// 	print() 
-// };
-
-// let el = document.getElementById( 'type' )
-// printText( el );
+let el = document.getElementById( 'type' )
+printText( el );
