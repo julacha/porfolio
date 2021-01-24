@@ -40,10 +40,12 @@ project_2.querySelector(".view_2").addEventListener("mouseover", function () {
   console.log("event");
   change_2.replaceWith(link_2);
   link_2.classList.add("active_2");
+  link.classList.add("fadein");
 });
 project_2.querySelector(".show_2 a").addEventListener("mouseout", function () {
   console.log("event");
   link_2.replaceWith(change_2);
+  change.classList.add("fadeout");
 });
 
 let project_3 = document.querySelector(".item_3")
@@ -53,10 +55,12 @@ project_3.querySelector(".view_3").addEventListener("mouseover", function () {
   console.log("event");
   change_3.replaceWith(link_3);
   link_3.classList.add("active_3");
+  link.classList.add("fadein");
 });
 project_3.querySelector(".show_3 a").addEventListener("mouseout", function () {
   console.log("event");
   link_3.replaceWith(change_3);
+  change.classList.add("fadeout");
 });
 
 let project_4 = document.querySelector(".item_4")
@@ -66,10 +70,27 @@ project_4.querySelector(".view_4").addEventListener("mouseover", function () {
   console.log("event");
   change_4.replaceWith(link_4);
   link_4.classList.add("active_4");
+  link.classList.add("fadein");
 });
 project_4.querySelector(".show_4 a").addEventListener("mouseout", function () {
   console.log("event");
   link_4.replaceWith(change_4);
+  change.classList.add("fadeout");
+});
+
+let project_5 = document.querySelector(".item_5")
+let change_5 = document.querySelector(".view_5");
+let link_5 = document.querySelector(".show_5 a");
+project_5.querySelector(".view_5").addEventListener("mouseover", function () {
+  console.log("event");
+  change_5.replaceWith(link_5);
+  link_5.classList.add("active_5");
+  link.classList.add("fadein");
+});
+project_5.querySelector(".show_5 a").addEventListener("mouseout", function () {
+  console.log("event");
+  link_5.replaceWith(change_5);
+  change.classList.add("fadeout");
 });
 
 // --------------------------------

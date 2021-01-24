@@ -14,12 +14,7 @@ body {
     flex-wrap: nowrap;
     height: 3em;
     font-size: 2.5em;
-    /* linear-gradient(rgba(253, 252, 234, 0.5), rgba(252, 252, 252, 0.5)), */
 }
-/* svg.tech{
-    width:70px;
-    fill:darkred;
-} */
 .logo{
     width: 80px;
 }
@@ -62,7 +57,38 @@ main{
     object-fit: cover;
     display: block;
     border-radius: 4%;
-    opacity: 1;
+}
+.view_2 .design {
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+    border-radius: 4%;
+    animation: animate_hide 2s;
+}
+.view_3 .design{
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+    border-radius: 4%;
+    animation: animate_hide 2s;
+}
+.view_4 .design{
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+    border-radius: 4%;
+    animation: animate_hide 2s;
+}
+.view_5 .design{
+    width: 15em; 
+    height: 15em; 
+    object-fit: cover;
+    display: block;
+    border-radius: 4%;
+    animation: animate_hide 2s;
 }
 .fadeout{
     width: 15em; 
@@ -73,40 +99,8 @@ main{
     animation: animate_hide 2s;
 }
 @keyframes animate_hide {
-    0%   {opacity: 0;}
-    100% {opacity: 50;}
-}
-.view_2 .design {
-    width: 15em; 
-    height: 15em; 
-    object-fit: cover;
-    display: block;
-    border-radius: 4%;
-}
-.view_3 .design{
-    width: 15em; 
-    height: 15em; 
-    object-fit: cover;
-    display: block;
-    border-radius: 4%;
-}
-.view_4 .design{
-    width: 15em; 
-    height: 15em; 
-    object-fit: cover;
-    display: block;
-    border-radius: 4%;
-}
-
-.show a{
-    width: 15em; 
-    height: 15em;
-    background-color: darkslategrey;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 4%;
+    0%   {opacity: 0.2;}
+    100% {opacity: 100;}
 }
 .fadein{
     width: 15em; 
@@ -115,17 +109,23 @@ main{
     display: none;
     justify-content: center;
     align-items: center;
-    position: relative;
     border-radius: 4%;
-    animation: animate_show s;
-    opacity: 0.5;
+    animation: animate_show 2s;
     animation-fill-mode: forwards;
 }
 @keyframes animate_show{
-    0%   {opacity: 0;}
-    100% {opacity: 50;}
+    0%   {opacity: 0.2;}
+    100% {opacity: 100;}
 }
-
+.show a{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+}
 .show_2 a{
     width: 15em; 
     height: 15em;
@@ -133,7 +133,6 @@ main{
     display: none;
     justify-content: center;
     align-items: center;
-    position: relative;
     border-radius: 4%;
 }
 .show_3 a{
@@ -143,10 +142,19 @@ main{
     display: none;
     justify-content: center;
     align-items: center;
-    position: relative;
     border-radius: 4%;
 }
 .show_4 a{
+    width: 15em; 
+    height: 15em;
+    background-color: darkslategrey;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4%;
+}
+.show_5 a{
     width: 15em; 
     height: 15em;
     background-color: darkslategrey;
@@ -183,6 +191,8 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 4%;
+    animation: animate_show 2s;
+    animation-fill-mode: forwards;
 }
 .active_3{
     width: 15em; 
@@ -197,6 +207,8 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 4%;
+    animation: animate_show 2s;
+    animation-fill-mode: forwards;
 }
 .active_4{
     width: 15em; 
@@ -211,6 +223,24 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 4%;
+    animation: animate_show 2s;
+    animation-fill-mode: forwards;
+}
+.active_5{
+    width: 15em; 
+    height: 15em;
+    background-image:linear-gradient(
+        rgba(25, 77, 102, 0.45),
+        rgba(25, 77, 102, 0.45)),
+    url(img/item_5.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+    animation: animate_show 2s;
+    animation-fill-mode: forwards;
 }
 a   {
     text-decoration: none;
@@ -239,15 +269,14 @@ a .desc{
 }
 .item_5{
     grid-area: 2/2/3/3;
-    display: none;
 }
 .item_6{
     grid-area: 2/3/3/4;
     display: none;
 }
 .frame{
-    width: 800px;
-    height: 550px;
+    width: 40em;
+    height: 27.5em;
     margin: auto;
     background-image:linear-gradient(rgba(253, 252, 234, 0.1), rgba(252, 252, 252, 0.1)),url(img/bg_2.jpg);
     display: flex;
@@ -255,21 +284,21 @@ a .desc{
     align-items: center;
 }
 .about{
-    width: 700px;
-    height: 450px;
+    width: 35em;
+    height: 22.5em;
     background: beige;
     margin: auto;
     display: flex;
 }
 .my_photo{
-    width: 140px;
-    height: 180px;
-    top: 30px;
-    left:15px;
+    width: 7em;
+    height: 9em;
+    top: 1.5em;
+    left:0.75em;
     background-image: url(img/Image_2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 15px;
+    margin: 0.75em;
 }
 .par_mani{
     display: flex;
@@ -277,9 +306,9 @@ a .desc{
 } 
 p{
     font-family: 'La Belle Aurore';
-    font-size: 20px;
-    width: 500px;
-    margin: 15px;
+    font-size: 1em;
+    width: 25em;
+    margin: 0.75em;
     text-align: center;
 } 
 a .inst{
@@ -295,9 +324,14 @@ strong{
 #type{
     font-family: 'La Belle Aurore', cursive; 
     color: #8fc8ae; 
-    margin-left: 250px;
+    margin-left: 5em;
 }
-h1 .name{
+/* #type:last-child{
+    font-family: 'La Belle Aurore', cursive; 
+    color: #8fc8ae; 
+    margin-left: 6em;
+} */
+h1.name{
     font-family: 'La Belle Aurore', cursive;
 }
 h1{
@@ -309,9 +343,9 @@ h4{
 #previous{
     margin: auto;
     display:grid;
-    width: 700px;
+    width: 35em;
     grid-template-rows: repeat (15, 1fr);
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 8em 1fr;
     font-family: 'Mukta', sans-serif;
     gap: 4px;
 }
@@ -367,84 +401,84 @@ h4{
     grid-area: 5/2/6/3;
     background-color:beige;
 }
-.add_educ{
+.tech{
     grid-area: 6/1/7/3;
+    background-color: beige;;
+}
+.skills{
+    grid-area: 7/1/8/3;
+    background-color: beige;
+}
+.add_educ{
+    grid-area: 8/1/9/3;
     background-color: beige;
 }
 .date_5{
-    grid-area: 7/1/8/2;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-}
-.rtg{
-    grid-area: 7/2/8/3;
-    background-color: beige;
-}
-.date_6{
-    grid-area: 8/1/9/2;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-}
-.rcs_2{
-    grid-area: 8/2/9/3;
-    background-color: beige;
-}
-.date_7{
     grid-area: 9/1/10/2;
     background-color: beige;
     display: flex;
     justify-content: center;
 }
-.rcs_1{
+.rtg{
     grid-area: 9/2/10/3;
     background-color: beige;
 }
-.date_8{
+.date_6{
     grid-area: 10/1/11/2;
     background-color: beige;
     display: flex;
     justify-content: center;
 }
-.citadele{
+.rcs_2{
     grid-area: 10/2/11/3;
     background-color: beige;
 }
-.educ{
-    grid-area: 11/1/12/3;
+.date_7{
+    grid-area: 11/1/12/2;
     background-color: beige;
-
+    display: flex;
+    justify-content: center;
 }
-.date_9{
+.rcs_1{
+    grid-area: 11/2/12/3;
+    background-color: beige;
+}
+.date_8{
     grid-area: 12/1/13/2;
     background-color: beige;
     display: flex;
     justify-content: center;
 }
-.tsi{
+.citadele{
     grid-area: 12/2/13/3;
     background-color: beige;
 }
+.educ{
+    grid-area: 13/1/14/3;
+    background-color: beige;
+
+}
+.date_9{
+    grid-area: 14/1/15/2;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+.tsi{
+    grid-area: 14/2/15/3;
+    background-color: beige;
+}
 .date_10{
-    grid-area: 13/1/14/2;
+    grid-area: 15/1/16/2;
     background-color: beige;
     display: flex;
     justify-content: center;
 }
 .lu{
-    grid-area: 13/2/14/3;
+    grid-area: 15/2/16/3;
     background-color:beige;
 }
-.tech{
-    grid-area: 14/1/15/3;
-    background-color: beige;;
-}
-.skills{
-    grid-area: 15/1/16/3;
-    background-color: beige;
 
-}
 .resp{
     display: inline;
 }
