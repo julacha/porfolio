@@ -38,7 +38,7 @@ main{
     display: flex;
     justify-content: center; 
 }
-.center{
+main.center{
     display: flex;
 }
 #portfolio{
@@ -326,13 +326,8 @@ strong{
 #type{
     font-family: 'La Belle Aurore', cursive; 
     color: #8fc8ae; 
-    margin-left: 5em;
+    margin-left: 4em;
 }
-/* #type:last-child{
-    font-family: 'La Belle Aurore', cursive; 
-    color: #8fc8ae; 
-    margin-left: 6em;
-} */
 h1.name{
     font-family: 'La Belle Aurore', cursive;
 }
@@ -483,11 +478,9 @@ h4{
     grid-area: 15/2/16/3;
     background-color:beige;
 }
-
 .resp{
     display: inline;
 }
-
 .contacts{
     font-family: 'Mukta', sans-serif;
     display: flex;
@@ -514,7 +507,7 @@ h4{
 
 @keyframes color {
     50% {
-    color: #8fc8ae;
+    color: #559777;
     }
 }
 
