@@ -38,6 +38,9 @@ main{
     display: flex;
     justify-content: center; 
 }
+.center{
+    display: flex;
+}
 #portfolio{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -48,7 +51,7 @@ main{
     height: 31em;
     margin-top: 1em;
     font-family: 'Mukta', sans-serif;
-    background-color: white;
+    justify-content: center; 
 }
 .view .design {
     width: 15em; 
@@ -518,8 +521,9 @@ h4{
 @media (max-width: 768px){
     #portfolio{
         display:grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15em 15em 15em;
+        grid-template-columns: 15em 15em;
+ 
     }
     .item_1{
         grid-area: 1/1/2/2;
