@@ -93,3 +93,15 @@ project_5.querySelector(".show_5 a").addEventListener("mouseout", function () {
   change.classList.add("fadeout");
 });
 
+$(window).resize(function() {
+  var text = $(".menu"),
+    currentWidth = parseInt(text.css("width")),
+    newWidth = 30;
+
+  if (currentWidth == 900) newWidth = 30;
+  else if (currentWidth < 900 && currentWidth >= 700) newWidth = 30;
+  else if (currentWidth < 700 && currentWidth >= 400) newWidth = 25;
+  else if (currentWidth < 400 && currentWidth >= 300) newWidth = 20;
+
+  text.css("font-size", newWidth + "px");
+});
