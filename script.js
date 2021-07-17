@@ -2,21 +2,7 @@
 let changes = document.querySelectorAll(".view");
 let links = document.querySelectorAll(".show a");
 
-// for (let change of changes) for(let link of links){
-// change.addEventListener("mouseover", function () {
-//   document.getElementById(change).style.opacity = opacity/100;
-//   document.getElementById(change).style.filter = 'alpha(opacity='+ opacity +')';
-//   change.replaceWith(link);
-//   document.getElementById(link).style.opacity = (100-opacity)/100;
-//   document.getElementById(link).style.filter = 'alpha(opacity='+ (100-opacity) +')';
-//   this.link.classList.add("active");
-// });
-// link.addEventListener("mouseout", function () {
-//   console.log("event");
-//   link.replaceWith(change);
-// });
-// }
-//https://stackoverflow.com/questions/29017379/how-to-make-fadeout-effect-with-pure-javascript
+
 let project_1 = document.querySelector(".item_1");
 let change = document.querySelector(".view");
 let link = document.querySelector(".show a");
@@ -90,6 +76,21 @@ project_5.querySelector(".view_5").addEventListener("mouseover", function () {
 project_5.querySelector(".show_5 a").addEventListener("mouseout", function () {
   console.log("event");
   link_5.replaceWith(change_5);
+  change.classList.add("fadeout");
+});
+
+let project_6 = document.querySelector(".item_6")
+let change_6 = document.querySelector(".view_6");
+let link_6 = document.querySelector(".show_6 a");
+project_6.querySelector(".view_6").addEventListener("mouseover", function () {
+  console.log("event");
+  change_6.replaceWith(link_6);
+  link_6.classList.add("active_6");
+  link.classList.add("fadein");
+});
+project_6.querySelector(".show_6 a").addEventListener("mouseout", function () {
+  console.log("event");
+  link_6.replaceWith(change_6);
   change.classList.add("fadeout");
 });
 

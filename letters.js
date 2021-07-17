@@ -18,27 +18,27 @@ for (let i = 0; i < textCont.length; i++) {
   }(i));
 }
 //--------------------------------
-let els = document.querySelectorAll('#type');
-for (let el of els){
-function printText( el ){
+// let els = document.querySelectorAll('#type');
+// for (let el of els){
+// function printText( el ){
 
-	let letterTimeout = 100
+// 	let letterTimeout = 100
 
-	let heading = el.innerHTML
-	let i = 1
+// 	let heading = el.innerHTML
+// 	let i = 1
 
-	let print = function(){
+// 	let print = function(){
 
-			if( i <= heading.length ){
-				el.innerHTML = heading.substring( 0, i );
-				setTimeout( arguments.callee, letterTimeout );
-			}
+// 			if( i <= heading.length ){
+// 				el.innerHTML = heading.substring( 0, i );
+// 				setTimeout( arguments.callee, letterTimeout );
+// 			}
 
-			i++;
-		}
+// 			i++;
+// 		}
 
-	print() 
-};
+// 	print() 
+// };
 
-printText( el );
-}
+// printText( el );
+// }
