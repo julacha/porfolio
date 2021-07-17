@@ -1,6 +1,7 @@
 @import url("fonts.css");
-.body{
+body{
     font-family: 'Mukta', sans-serif;
+    margin: 5px;
 }
 .logo{
     width: 80px;
@@ -8,13 +9,13 @@
 .logo_2{
     width: 80px;
 }
-/* main{
+main{
     display: flex;
     justify-content: center; 
 }
 main.center{
     display: flex;
-} */
+}
 #portfolio{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -304,7 +305,7 @@ a .desc{
 }
 p{
     font-family: 'La Belle Aurore';
-    font-size: 2.44vw;
+    font-size: 25px;
     margin-right: 5px;
     margin-left: 5px;
     text-align: center;
@@ -323,8 +324,7 @@ a.inst:-webkit-any-link {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    margin-left: 5px;
-   height: 100vh;
+    height: 100vh;
 }
 nav{
     grid-area: 1/2/2/3;
@@ -335,7 +335,7 @@ nav{
 }
 nav a{
     font-family: 'Chivo', sans-serif;
-    font-size: 1.95vw;
+    font-size: 20px;
 }
 a .menu{
     /*20px*/
